@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamal Kant Tiwari - IT Solutions Professional | Mumbai</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6; color: #333; background: #fafafa;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 80px 20px; text-align: center;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header .tagline { font-size: 1.3em; opacity: 0.95; margin-bottom: 30px; }
+    .buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      padding: 15px 35px; border-radius: 8px; text-decoration: none;
+      font-weight: bold; font-size: 1.1em; transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: white; color: #667eea; }
+    .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+    section { padding: 60px 20px; }
+    .section-title { text-align: center; font-size: 2em; margin-bottom: 50px; color: #2d3748; }
+    .about { background: white; }
+    .about p { max-width: 800px; margin: 0 auto 20px; font-size: 1.1em; text-align: center; }
+    .services { background: #f7fafc; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 40px; }
+    .card {
+      background: white; padding: 30px; border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #667eea; margin-bottom: 15px; font-size: 1.4em; }
+    .card ul { list-style: none; padding-left: 0; }
+    .card li { padding: 8px 0; padding-left: 25px; position: relative; }
+    .card li:before { content: "✓"; position: absolute; left: 0; color: #48bb78; font-weight: bold; }
+    .why-me { background: white; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+    .feature { text-align: center; padding: 25px; background: #f7fafc; border-radius: 10px; }
+    .feature h4 { color: #2d3748; margin-bottom: 10px; }
+    .sales { background: #f7fafc; }
+    .contact { background: white; }
+    .contact-info { text-align: center; margin-bottom: 40px; }
+    .contact-info p { font-size: 1.2em; margin: 10px 0; }
+    .contact-form { max-width: 500px; margin: 0 auto; background: #f7fafc; padding: 30px; border-radius: 12px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-weight: bold; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 12px; border: 2px solid #e2e8f0;
+      border-radius: 6px; font-size: 1em;
+    }
+    .form-group textarea { height: 120px; resize: vertical; }
+    .submit-btn {
+      width: 100%; padding: 15px; background: #667eea; color: white;
+      border: none; border-radius: 6px; font-size: 1.1em; font-weight: bold; cursor: pointer;
+    }
+    .submit-btn:hover { background: #5568d3; }
+    footer { background: #2d3748; color: white; text-align: center; padding: 30px; }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      header .tagline { font-size: 1em; }
+      .section-title { font-size: 1.5em; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kamal Kant Tiwari</h1>
+      <p class="tagline">IT Solutions Professional | Mumbai</p>
+      <p style="font-size: 1.1em; margin-bottom: 30px;">
+        Premium IT Services — Desktop, Laptop, Server, CCTV & More<br>
+        Malad West, Mumbai, Maharashtra 400064
+      </p>
+      <div class="buttons">
+        <a href="tel:+919920300531" class="btn btn-primary">📞 Call Now</a>
+        <a href="https://wa.me/919920300531" class="btn btn-secondary">💬 WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>मैं एक experienced IT professional हूँ जो <strong>premium quality service</strong> provide करता हूँ।</p>
+      <p>मैं तब तक काम पूरा नहीं करता जब तक customer पूरी तरह <strong>satisfied</strong> न हो जाए।</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="grid">
+        <div class="card"><h3>🔧 Hardware Repair</h3><ul><li>Desktop & Laptop Repair</li><li>Motherboard Level Repair</li><li>Screen Replacement</li><li>Printer Service</li></ul></div>
+        <div class="card"><h3>🖥️ Installation</h3><ul><li>CCTV Camera Installation</li><li>Biometric System Setup</li><li>Network/WiFi Setup</li><li>LAN Cable Structuring</li></ul></div>
+        <div class="card"><h3>💻 Software</h3><ul><li>OS Installation</li><li>Software Installation</li><li>Antivirus Setup</li><li>System Optimization</li></ul></div>
+        <div class="card"><h3>🚀 Custom Solutions</h3><ul><li>Full System Upgrade</li><li>Custom PC Assembly</li><li>Office Migration</li><li>Data Recovery</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-me">
+    <div class="container">
+      <h2 class="section-title">Why Choose Me</h2>
+      <div class="features">
+        <div class="feature"><h4>⭐ Premium Quality</h4><p>कभी compromise नहीं</p></div>
+        <div class="feature"><h4>⭐ Satisfaction Guaranteed</h4><p>तब तक जब तक happy</p></div>
+        <div class="feature"><h4>⭐ Genuine Parts</h4><p>असली quality parts</p></div>
+        <div class="feature"><h4>⭐ Complete Solution</h4><p>hardware + software</p></div>
+        <div class="feature"><h4>⭐ Professional</h4><p>समय पर work</p></div>
+        <div class="feature"><h4>⭐ Post-Service Support</h4><p>काम के बाद help</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sales">
+    <div class="container">
+      <h2 class="section-title">Sales</h2>
+      <div class="grid">
+        <div class="card"><h3>💻 Computers</h3><ul><li>New Branded Laptops/Desktops</li><li>Assembled Custom PCs</li><li>Refurbished (Premium Quality)</li></ul></div>
+        <div class="card"><h3>🖨️ Hardware</h3><ul><li>Printers (All Brands)</li><li>Servers</li><li>CCTV Cameras</li><li>Biometric Devices</li></ul></div>
+        <div class="card"><h3>📱 Software</h3><ul><li>Windows License</li><li>Microsoft Office</li><li>Antivirus Licenses</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-info">
+        <p>📞 Phone: +91 9920300531</p>
+        <p>💬 WhatsApp: +91 9920300531</p>
+        <p>📧 Email: supportkamal@gmail.com</p>
+        <p>📍 Address: Malad West, Mumbai, Maharashtra 400064</p>
+      </div>
+      <div class="contact-form">
+        <h3 style="text-align:center; margin-bottom:20px;">Request Callback</h3>
+        <form action="mailto:supportkamal@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" required></div>
+          <div class="form-group"><label>Service Needed</label><select name="service"><option>Desktop Repair</option><option>Laptop Repair</option><option>Printer</option><option>CCTV</option><option>Data Recovery</option><option>Other</option></select></div>
+          <div class="form-group"><label>Message</label><textarea name="message"></textarea></div>
+          <button type="submit" class="submit-btn">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kamal Kant Tiwari — IT Solutions Professional</p>
+    <p>Malad West, Mumbai, Maharashtra 400064</p>
+  </footer>
+</body>
+</html>
